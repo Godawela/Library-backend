@@ -2096,3 +2096,55 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
 	... 15 more
+24-Jan-2026 13:06:01 INFO - HV000001: Hibernate Validator 8.0.2.Final
+24-Jan-2026 13:06:01 INFO - Starting LibraryManagementSystemApplication using Java 21.0.9 with PID 17816 (E:\sec\LibraryManagementSystem\target\classes started by user in E:\sec\LibraryManagementSystem)
+24-Jan-2026 13:06:01 INFO - No active profile set, falling back to 1 default profile: "default"
+24-Jan-2026 13:06:03 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+24-Jan-2026 13:06:04 INFO - Finished Spring Data repository scanning in 137 ms. Found 5 JPA repository interfaces.
+24-Jan-2026 13:06:05 INFO - Tomcat initialized with port 8080 (http)
+24-Jan-2026 13:06:05 INFO - Initializing ProtocolHandler ["http-nio-8080"]
+24-Jan-2026 13:06:05 INFO - Starting service [Tomcat]
+24-Jan-2026 13:06:05 INFO - Starting Servlet engine: [Apache Tomcat/10.1.41]
+24-Jan-2026 13:06:05 INFO - Initializing Spring embedded WebApplicationContext
+24-Jan-2026 13:06:05 INFO - Root WebApplicationContext: initialization completed in 3866 ms
+24-Jan-2026 13:06:06 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+24-Jan-2026 13:06:06 INFO - HHH000412: Hibernate ORM core version 6.6.15.Final
+24-Jan-2026 13:06:06 INFO - HHH000026: Second-level cache disabled
+24-Jan-2026 13:06:06 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+24-Jan-2026 13:06:06 INFO - HikariPool-1 - Starting...
+24-Jan-2026 13:06:07 INFO - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1405aa6a
+24-Jan-2026 13:06:07 INFO - HikariPool-1 - Start completed.
+24-Jan-2026 13:06:07 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+24-Jan-2026 13:06:08 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+24-Jan-2026 13:06:08 WARN - SQL Warning Code: 0, SQLState: 00000
+24-Jan-2026 13:06:08 WARN - constraint "uk5mtto2jcmfrwfg0p1ui8mnweu" of relation "books" does not exist, skipping
+24-Jan-2026 13:06:08 WARN - SQL Warning Code: 0, SQLState: 00000
+24-Jan-2026 13:06:08 WARN - constraint "ukdhxuydjj5l1vds6s9eex23dcr" of relation "user_data" does not exist, skipping
+24-Jan-2026 13:06:09 WARN - SQL Warning Code: 0, SQLState: 00000
+24-Jan-2026 13:06:09 WARN - constraint "ukoj8aadf6iha7ixj3q7p36x4fu" of relation "user_data" does not exist, skipping
+24-Jan-2026 13:06:09 WARN - SQL Warning Code: 0, SQLState: 00000
+24-Jan-2026 13:06:09 WARN - constraint "ukjtqibbffagcpvn27yhkni1t0j" of relation "user_data" does not exist, skipping
+24-Jan-2026 13:06:09 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+24-Jan-2026 13:06:10 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+24-Jan-2026 13:06:11 INFO - Exposing 1 endpoint beneath base path '/actuator'
+24-Jan-2026 13:06:11 INFO - Starting ProtocolHandler ["http-nio-8080"]
+24-Jan-2026 13:06:12 INFO - Tomcat started on port 8080 (http) with context path '/'
+24-Jan-2026 13:06:12 INFO - Started LibraryManagementSystemApplication in 11.163 seconds (process running for 12.445)
+24-Jan-2026 13:06:12 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-Jan-2026 13:06:12 INFO - Initializing Servlet 'dispatcherServlet'
+24-Jan-2026 13:06:12 INFO - Completed initialization in 2 ms
+24-Jan-2026 13:06:22 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [Umesha Samudinie Godawela]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+24-Jan-2026 13:06:41 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [Umesha Samudinie Godawela]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+24-Jan-2026 13:07:03 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [transactions]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+24-Jan-2026 13:07:25 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [kitty eliza]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+24-Jan-2026 13:07:43 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [h j]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+24-Jan-2026 13:08:33 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [Alice]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
+24-Jan-2026 13:13:40 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
+24-Jan-2026 13:36:29 ERROR - jakarta.validation.ConstraintViolationException: fetchUserAndIssuedLibraryCardByEmail.email: Email should be in valid format
