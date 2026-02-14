@@ -1,5 +1,4 @@
-# 📚 Library Management System (Full Stack) test edit my externel member
-
+# 📚 Library Management System (Full Stack) 
 A complete full-stack Library Management System built with **Spring Boot (Backend)** and **React.js + Bootstrap (Frontend)**. It supports core library operations such as managing users, issuing library cards, managing authors and their books, and handling book reviews.
 
 ---
@@ -180,13 +179,5 @@ Add this to `pom.xml` if not present:
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
----
-
-## 👨‍💻 Author
-
-**Thimothi Babu Ramagalla**  
-[GitHub Profile](https://github.com/thimothybabu123)
