@@ -1,5 +1,4 @@
-# 📚 Library Management System (Full Stack)
-
+# 📚 Library Management System (Full Stack) 
 A complete full-stack Library Management System built with **Spring Boot (Backend)** and **React.js + Bootstrap (Frontend)**. It supports core library operations such as managing users, issuing library cards, managing authors and their books, and handling book reviews.
 
 ---
