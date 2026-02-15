@@ -1,6 +1,5 @@
 package com.gl.lms.dto;
 
-import com.gl.lms.entity.Books;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -20,9 +19,7 @@ public class AuthorsDTO {
     private Integer id;
 
     @NotNull(message = "Name should not be null")
-
     @NotBlank(message = "Name should not be blank")
-    @Pattern(regexp = "[A-Z][a-z]+\\s[A-Z][a-z]+", message = "Name should be exactly 2 words")
     private String name;
 
     @NotEmpty(message = "Books should not be null or empty")
