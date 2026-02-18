@@ -35,7 +35,7 @@ function HomeScreen() {
               </div>
             </div>
             <div className="card-footer text-muted text-center">
-              Made with ❤️ using React & Spring Boot
+              Made with using React & Spring Boot
             </div>
           </div>
         </div>

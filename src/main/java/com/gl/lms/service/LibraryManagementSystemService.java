@@ -3,10 +3,8 @@ package com.gl.lms.service;
 import com.gl.lms.dto.*;
 
 import com.gl.lms.exception.LibraryManagementSystemException;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.ResourceBundle;
 
 
 public interface LibraryManagementSystemService {
