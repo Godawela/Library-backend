@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
+
 @Entity
 @Table(name = "userData")
 @Setter
@@ -26,6 +27,9 @@ public class Users {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "library_cards_id", nullable = false)
     private LibraryCards libraryCards;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
 
 }
